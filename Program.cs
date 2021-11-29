@@ -63,9 +63,6 @@ namespace MillPlane
 
         private static void Build(double toolDiameter, int rpm, double feed, double stepOver, double stepDown, double width, double height, double depth, FileInfo output)
         {
-Console.WriteLine(feed);
-Console.WriteLine(rpm);
-
             if (width < toolDiameter) width = toolDiameter;
             if (height < toolDiameter) height = toolDiameter;
             if (depth > 0) depth = 0 - depth;
